@@ -13,6 +13,8 @@
   "author": "Nirmal",
   "license": "ISC",
   "dependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
@@ -25,8 +27,6 @@
     "winston": "^3.3.3"
   },
   "devDependencies": {
-    "@types/cors": "^2.8.10",
-    "@types/express": "^4.17.11",
     "@types/lodash": "^4.14.168",
     "@types/mysql": "^2.15.18",
     "@types/nconf": "^0.10.0",
