@@ -1,4 +1,4 @@
-import express, { Request, Response } from "express";
+import express from "express";
 import cors from "cors";
 import config from "./config/config";
 
@@ -9,7 +9,7 @@ app.use(cors());
 
 const PORT = config.get("port");
 
-app.get("/", (req: Request, res: Response) => {
+app.get("/", (req, res) => {
   res.send("BAP Running");
 });
 app.use("/on_search", require("./routes/v1/on_search"));
