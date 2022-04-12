@@ -5,8 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "start": "env-cmd -f ./src/config/dev.env nodemon --config nodemon.json src/index.ts",
-    "dev": "env-cmd -f ./src/config/dev.env nodemon --config nodemon.json src/index.ts",
+    "start": "nodemon --config nodemon.json src/index.ts",
+    "dev": "nodemon --config nodemon.json src/index.ts",
     "dev:debug": "env-cmd -f ./src/config/dev.env nodemon --config nodemon.json --inspect-brk src/index.ts",
     "init_ts": "npx tsc --init && tslint --init"
   },
