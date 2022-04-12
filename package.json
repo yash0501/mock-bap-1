@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc -p .",
-    "start": "nodemon --exec ts-node src/index.ts",
+    "start": "npx ts-node src/index.ts",
     "dev": "nodemon --config nodemon.json src/index.ts",
     "dev:debug": "env-cmd -f ./src/config/dev.env nodemon --config nodemon.json --inspect-brk src/index.ts",
     "init_ts": "npx tsc --init && tslint --init"
