@@ -4,7 +4,7 @@
   "description": "beckn-app-platform",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc -p . npm i -g ts-node",
     "start": "nodemon --config nodemon.json src/index.ts",
     "dev": "nodemon --config nodemon.json src/index.ts",
     "dev:debug": "env-cmd -f ./src/config/dev.env nodemon --config nodemon.json --inspect-brk src/index.ts",
